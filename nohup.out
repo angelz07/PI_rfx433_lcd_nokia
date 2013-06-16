@@ -1,0 +1,604 @@
+1
+RFXCMD version 0.24
+------------------------------------------------
+Send			= 0B 11 00 01 00 95 D8 3E 02 01 0F 70
+Date/Time		= 2013-06-13 01:43:37
+Packet Length		= 0B
+Packettype		= Lighting2
+Subtype			= AC
+Seqnbr			= 01
+Id			= 0095D83E
+Unitcode		= 2
+Command			= On
+Dim level		= 100%
+Signal level		= 7
+------------------------------------------------
+Received		= 04 02 01 01 00
+Date/Time		= 2013-06-13 01:43:38
+Packet Length		= 04
+Packettype		= Receiver/Transmitter Message
+Subtype			= Transmitter response
+Seqnbr			= 01
+Message			= ACK, transmit OK
+RFXCMD version 0.24
+------------------------------------------------
+Send			= 0B 11 00 01 00 95 D8 3E 01 01 0F 70
+Date/Time		= 2013-06-13 01:43:37
+Packet Length		= 0B
+Packettype		= Lighting2
+Subtype			= AC
+Seqnbr			= 01
+Id			= 0095D83E
+Unitcode		= 1
+Command			= On
+Dim level		= 100%
+Signal level		= 7
+------------------------------------------------
+Received		= 02 01 01
+Date/Time		= 2013-06-13 01:43:38
+Packet Length		= 02
+Packettype		= Interface Message
+Traceback (most recent call last):
+  File "rfx433/rfxcmd.py", line 3102, in <module>
+RFXCMD version 0.24
+------------------------------------------------
+Send			= 0B 11 00 01 00 95 D8 3E 03 01 0F 70
+Date/Time		= 2013-06-13 01:43:37
+Packet Length		= 0B
+Packettype		= Lighting2
+Subtype			= AC
+Seqnbr			= 01
+Id			= 0095D83E
+Unitcode		= 3
+Command			= On
+Dim level		= 100%
+Signal level		= 7
+Traceback (most recent call last):
+  File "rfx433/rfxcmd.py", line 3102, in <module>
+    read_rfx()
+  File "rfx433/rfxcmd.py", line 2198, in read_rfx
+    read_rfx()
+  File "rfx433/rfxcmd.py", line 2216, in read_rfx
+    decodePacket( message )
+  File "rfx433/rfxcmd.py", line 516, in decodePacket
+    message = byte + readbytes( ord(byte) )
+  File "rfx433/rfxcmd.py", line 350, in readbytes
+    byte = serial.port.read()
+  File "/usr/local/lib/python2.7/dist-packages/serial/serialposix.py", line 460, in read
+    'seqnbr' : ByteToHex(message[3]),
+IndexError: string index out of range
+    raise SerialException('device reports readiness to read but returned no data (device disconnected?)')
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected?)
+Status [[[<write status='success'/>]]]
+ok
+Status [[[<write status='success'/>]]]
+ok
+Status [[[<write status='success'/>]]]
+ok
+7
+Status [[[<write status='success'/>]]]
+ok
+7
+7
+Status [[[<write status='success'/>]]]
+ok
+Status [[[<write status='success'/>]]]
+ok
+RFXCMD version 0.24
+------------------------------------------------
+Send			= 0B 11 00 01 00 95 D8 3E 01 01 0F 70
+Date/Time		= 2013-06-13 01:44:55
+Packet Length		= 0B
+Packettype		= Lighting2
+Subtype			= AC
+Seqnbr			= 01
+Id			= 0095D83E
+Unitcode		= 1
+Command			= On
+Dim level		= 100%
+Signal level		= 7
+------------------------------------------------
+Received		= 02 01 01
+Date/Time		= 2013-06-13 01:44:56
+Packet Length		= 02
+Packettype		= Interface Message
+Traceback (most recent call last):
+  File "rfx433/rfxcmd.py", line 3102, in <module>
+RFXCMD version 0.24
+------------------------------------------------
+Send			= 0B 11 00 01 00 95 D8 3E 02 01 0F 70
+Date/Time		= 2013-06-13 01:44:55
+Packet Length		= 0B
+Packettype		= Lighting2
+Subtype			= AC
+Seqnbr			= 01
+Id			= 0095D83E
+Unitcode		= 2
+Command			= On
+Dim level		= 100%
+Signal level		= 7
+    read_rfx()
+  File "rfx433/rfxcmd.py", line 2216, in read_rfx
+    decodePacket( message )
+  File "rfx433/rfxcmd.py", line 516, in decodePacket
+    'seqnbr' : ByteToHex(message[3]),
+IndexError: string index out of range
+Status [[[<write status='success'/>]]]
+ok
+Status [[[<write status='success'/>]]]
+ok
+RFXCMD version 0.24
+------------------------------------------------
+Send			= 0B 11 00 01 00 95 D8 3E 03 01 0F 70
+Date/Time		= 2013-06-13 01:44:55
+Packet Length		= 0B
+Packettype		= Lighting2
+Subtype			= AC
+Seqnbr			= 01
+Id			= 0095D83E
+Unitcode		= 3
+Command			= On
+Dim level		= 100%
+Signal level		= 7
+------------------------------------------------
+Received		= 04 04 02 01 04
+Date/Time		= 2013-06-13 01:44:56
+Packet Length		= 04
+Error: unrecognizable packet
+Status [[[<write status='success'/>]]]
+ok
+7
+7
+Status [[[<write status='success'/>]]]
+ok
+Status [[[<write status='success'/>]]]
+ok
+7
+Status [[[<write status='success'/>]]]
+ok
+RFXCMD version 0.24
+------------------------------------------------
+Send			= 0B 11 00 01 00 95 D8 3E 03 00 00 70
+Date/Time		= 2013-06-13 01:45:52
+Packet Length		= 0B
+Packettype		= Lighting2
+Subtype			= AC
+Seqnbr			= 01
+Id			= 0095D83E
+Unitcode		= 3
+Command			= Off
+Dim level		= 0%
+Signal level		= 7
+RFXCMD version 0.24
+------------------------------------------------
+Send			= 0B 11 00 01 00 95 D8 3E 02 00 00 70
+Date/Time		= 2013-06-13 01:45:52
+Packet Length		= 0B
+Packettype		= Lighting2
+Subtype			= AC
+Seqnbr			= 01
+Id			= 0095D83E
+Unitcode		= 2
+Command			= Off
+Dim level		= 0%
+Signal level		= 7
+------------------------------------------------
+Received		= 04 02 01 01
+Incoming packet not valid, waiting for next...
+Status [[[<write status='success'/>]]]
+ok
+Status [[[<write status='success'/>]]]
+ok
+7
+7
+Status [[[<write status='success'/>]]]
+ok
+Status [[[<write status='success'/>]]]
+ok
+RFXCMD version 0.24
+------------------------------------------------
+Send			= 0B 11 00 01 00 95 D8 3E 01 01 0F 70
+Date/Time		= 2013-06-13 01:47:01
+Packet Length		= 0B
+Packettype		= Lighting2
+Subtype			= AC
+Seqnbr			= 01
+Id			= 0095D83E
+Unitcode		= 1
+Command			= On
+Dim level		= 100%
+Signal level		= 7
+RFXCMD version 0.24
+------------------------------------------------
+Send			= 0B 11 00 01 00 95 D8 3E 02 01 0F 70
+Date/Time		= 2013-06-13 01:47:01
+Packet Length		= 0B
+Packettype		= Lighting2
+Subtype			= AC
+Seqnbr			= 01
+Id			= 0095D83E
+Unitcode		= 2
+Command			= On
+Dim level		= 100%
+Signal level		= 7
+Traceback (most recent call last):
+  File "rfx433/rfxcmd.py", line 3102, in <module>
+    read_rfx()
+  File "rfx433/rfxcmd.py", line 2198, in read_rfx
+RFXCMD version 0.24
+------------------------------------------------
+Send			= 0B 11 00 01 00 95 D8 3E 03 01 0F 70
+Date/Time		= 2013-06-13 01:47:01
+Packet Length		= 0B
+Packettype		= Lighting2
+Subtype			= AC
+Seqnbr			= 01
+Id			= 0095D83E
+Unitcode		= 3
+Command			= On
+Dim level		= 100%
+Signal level		= 7
+------------------------------------------------
+Received		= 02 01 01
+Date/Time		= 2013-06-13 01:47:02
+Packet Length		= 02
+Packettype		= Interface Message
+Traceback (most recent call last):
+  File "rfx433/rfxcmd.py", line 3102, in <module>
+    read_rfx()
+  File "rfx433/rfxcmd.py", line 2216, in read_rfx
+    message = byte + readbytes( ord(byte) )
+  File "rfx433/rfxcmd.py", line 350, in readbytes
+    byte = serial.port.read()
+  File "/usr/local/lib/python2.7/dist-packages/serial/serialposix.py", line 460, in read
+    raise SerialException('device reports readiness to read but returned no data (device disconnected?)')
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected?)
+    decodePacket( message )
+  File "rfx433/rfxcmd.py", line 516, in decodePacket
+    'seqnbr' : ByteToHex(message[3]),
+IndexError: string index out of range
+Status [[[<write status='success'/>]]]
+ok
+Status [[[<write status='success'/>]]]
+ok
+Status [[[<write status='success'/>]]]
+ok
+7
+7
+7
+Status [[[<write status='success'/>]]]
+ok
+Status [[[<write status='success'/>]]]
+ok
+Status [[[<write status='success'/>]]]
+ok
+RFXCMD version 0.24
+------------------------------------------------
+Send			= 0B 11 00 01 00 95 D8 3E 02 01 0F 70
+Date/Time		= 2013-06-13 01:48:37
+Packet Length		= 0B
+Packettype		= Lighting2
+Subtype			= AC
+Seqnbr			= 01
+Id			= 0095D83E
+Unitcode		= 2
+Command			= On
+Dim level		= 100%
+Signal level		= 7
+------------------------------------------------
+Received		= 02 01 01
+Date/Time		= 2013-06-13 01:48:38
+Packet Length		= 02
+Packettype		= Interface Message
+Traceback (most recent call last):
+  File "rfx433/rfxcmd.py", line 3102, in <module>
+RFXCMD version 0.24
+------------------------------------------------
+Send			= 0B 11 00 01 00 95 D8 3E 01 01 0F 70
+Date/Time		= 2013-06-13 01:48:37
+Packet Length		= 0B
+Packettype		= Lighting2
+Subtype			= AC
+Seqnbr			= 01
+Id			= 0095D83E
+Unitcode		= 1
+Command			= On
+Dim level		= 100%
+Signal level		= 7
+RFXCMD version 0.24
+------------------------------------------------
+Send			= 0B 11 00 01 00 95 D8 3E 03 01 0F 70
+Date/Time		= 2013-06-13 01:48:37
+Packet Length		= 0B
+Packettype		= Lighting2
+Subtype			= AC
+Seqnbr			= 01
+Id			= 0095D83E
+Unitcode		= 3
+Command			= On
+Dim level		= 100%
+Signal level		= 7
+Traceback (most recent call last):
+  File "rfx433/rfxcmd.py", line 3102, in <module>
+    read_rfx()
+  File "rfx433/rfxcmd.py", line 2198, in read_rfx
+    read_rfx()
+  File "rfx433/rfxcmd.py", line 2216, in read_rfx
+    decodePacket( message )
+  File "rfx433/rfxcmd.py", line 516, in decodePacket
+    message = byte + readbytes( ord(byte) )
+  File "rfx433/rfxcmd.py", line 350, in readbytes
+    byte = serial.port.read()
+  File "/usr/local/lib/python2.7/dist-packages/serial/serialposix.py", line 460, in read
+    raise SerialException('device reports readiness to read but returned no data (device disconnected?)')
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected?)
+    'seqnbr' : ByteToHex(message[3]),
+IndexError: string index out of range
+Status [[[<write status='success'/>]]]
+ok
+Status [[[<write status='success'/>]]]
+ok
+Status [[[<write status='success'/>]]]
+ok
+7
+Status [[[<write status='success'/>]]]
+ok
+7
+7
+Status [[[<write status='success'/>]]]
+ok
+Status [[[<write status='success'/>]]]
+ok
+RFXCMD version 0.24
+------------------------------------------------
+Send			= 0B 11 00 01 00 95 D8 3E 01 00 00 70
+Date/Time		= 2013-06-13 01:51:07
+Packet Length		= 0B
+Packettype		= Lighting2
+Subtype			= AC
+Seqnbr			= 01
+Id			= 0095D83E
+Unitcode		= 1
+Command			= Off
+Dim level		= 0%
+Signal level		= 7
+Status [[[<write status='success'/>]]]
+ok
+7
+Status [[[<write status='success'/>]]]
+ok
+RFXCMD version 0.24
+------------------------------------------------
+Send			= 0B 11 00 01 00 95 D8 3E 01 00 00 70
+Date/Time		= 2013-06-13 01:45:30
+Packet Length		= 0B
+Packettype		= Lighting2
+Subtype			= AC
+Seqnbr			= 01
+Id			= 0095D83E
+Unitcode		= 1
+Command			= Off
+Dim level		= 0%
+Signal level		= 7
+------------------------------------------------
+Received		= FC 04 02 01 01 00 04 02 01 01 00 00 11 5A 01 01 18 32 00 00 00 00 00 00 00 27 5E E0 CD 69 04 02 01 01 00 02 01 01 00 04 02 01 01 00 04 02 01 01 00 04 02 01 01 00 04 02 01 01 00 02 01 01 00 04 02 01 01 00 04 02 01 01 00 04 02 01 01 00 04 02 01 01 00 04 02 01 01 00 04 02 01 01 00 04 02 01 01 00 04 02 01 01 00 11 5A 01 01 18 32 00 00 00 00 00 00 00 27 5E E0 CD 69 11 5A 01 01 18 32 00 00 00 00 00 00 00 27 5E E0 CD 69 11 5A 01 01 18 32 00 00 00 00 00 00 00 27 5E E0 CD 69 11 5A 01 01 18 32 00 00 00 00 00 00 00 27 5E E0 CD 69 11 5A 01 01 18 32 00 00 00 00 00 00 00 27 5E E0 CD 69
+Incoming packet not valid, waiting for next...
+Status [[[<write status='success'/>]]]
+ok
+7
+RFXCMD version 0.24
+------------------------------------------------
+Send			= 0B 11 00 01 00 95 D8 3E 02 00 00 70
+Date/Time		= 2013-06-14 15:21:12
+Packet Length		= 0B
+Packettype		= Lighting2
+Subtype			= AC
+Seqnbr			= 01
+Id			= 0095D83E
+Unitcode		= 2
+Command			= Off
+Dim level		= 0%
+Signal level		= 7
+RFXCMD version 0.24
+------------------------------------------------
+Send			= 0B 11 00 01 00 95 D8 3E 01 00 00 70
+Date/Time		= 2013-06-14 15:21:12
+Packet Length		= 0B
+Packettype		= Lighting2
+Subtype			= AC
+Seqnbr			= 01
+Id			= 0095D83E
+Unitcode		= 1
+Command			= Off
+Dim level		= 0%
+Signal level		= 7
+RFXCMD version 0.24
+------------------------------------------------
+Send			= 0B 11 00 01 00 95 D8 3E 03 00 00 70
+Date/Time		= 2013-06-14 15:21:12
+Packet Length		= 0B
+Packettype		= Lighting2
+Subtype			= AC
+Seqnbr			= 01
+Id			= 0095D83E
+Unitcode		= 3
+Command			= Off
+Dim level		= 0%
+Signal level		= 7
+Status [[[<write status='success'/>]]]
+ok
+Status [[[<write status='success'/>]]]
+ok
+Status [[[<write status='success'/>]]]
+ok
+7
+7
+7
+RFXCMD version 0.24
+------------------------------------------------
+Send			= 0B 11 00 01 00 95 D8 3E 03 01 0F 70
+Date/Time		= 2013-06-14 15:22:16
+Packet Length		= 0B
+Packettype		= Lighting2
+Subtype			= AC
+Seqnbr			= 01
+Id			= 0095D83E
+Unitcode		= 3
+Command			= On
+Dim level		= 100%
+Signal level		= 7
+------------------------------------------------
+Received		= 04 02 01 01 00
+Date/Time		= 2013-06-14 15:22:17
+Packet Length		= 04
+Packettype		= Receiver/Transmitter Message
+Subtype			= Transmitter response
+Seqnbr			= 01
+Message			= ACK, transmit OK
+Status [[[<write status='success'/>]]]
+ok
+7
+RFXCMD version 0.24
+------------------------------------------------
+Send			= 0B 11 00 01 00 95 D8 3E 01 01 0F 70
+Date/Time		= 2013-06-14 15:22:51
+Packet Length		= 0B
+Packettype		= Lighting2
+Subtype			= AC
+Seqnbr			= 01
+Id			= 0095D83E
+Unitcode		= 1
+Command			= On
+Dim level		= 100%
+Signal level		= 7
+------------------------------------------------
+Received		= 04 02 01 01 00
+Date/Time		= 2013-06-14 15:22:52
+Packet Length		= 04
+Packettype		= Receiver/Transmitter Message
+Subtype			= Transmitter response
+Seqnbr			= 01
+Message			= ACK, transmit OK
+Status [[[<write status='success'/>]]]
+ok
+7
+RFXCMD version 0.24
+------------------------------------------------
+Send			= 0B 11 00 01 00 95 D8 3E 01 00 00 70
+Date/Time		= 2013-06-14 15:26:28
+Packet Length		= 0B
+Packettype		= Lighting2
+Subtype			= AC
+Seqnbr			= 01
+Id			= 0095D83E
+Unitcode		= 1
+Command			= Off
+Dim level		= 0%
+Signal level		= 7
+------------------------------------------------
+Received		= 04 02 01 01 00
+Date/Time		= 2013-06-14 15:26:29
+Packet Length		= 04
+Packettype		= Receiver/Transmitter Message
+Subtype			= Transmitter response
+Seqnbr			= 01
+Message			= ACK, transmit OK
+Status [[[<write status='success'/>]]]
+ok
+7
+RFXCMD version 0.24
+------------------------------------------------
+Send			= 0B 11 00 01 00 95 D8 3E 01 01 0F 70
+Date/Time		= 2013-06-14 15:26:38
+Packet Length		= 0B
+Packettype		= Lighting2
+Subtype			= AC
+Seqnbr			= 01
+Id			= 0095D83E
+Unitcode		= 1
+Command			= On
+Dim level		= 100%
+Signal level		= 7
+------------------------------------------------
+Received		= 04 02 01 01 00
+Date/Time		= 2013-06-14 15:26:39
+Packet Length		= 04
+Packettype		= Receiver/Transmitter Message
+Subtype			= Transmitter response
+Seqnbr			= 01
+Message			= ACK, transmit OK
+Status [[[<write status='success'/>]]]
+ok
+7
+RFXCMD version 0.24
+------------------------------------------------
+Send			= 0B 11 00 01 00 95 D8 3E 01 00 00 70
+Date/Time		= 2013-06-14 15:26:45
+Packet Length		= 0B
+Packettype		= Lighting2
+Subtype			= AC
+Seqnbr			= 01
+Id			= 0095D83E
+Unitcode		= 1
+Command			= Off
+Dim level		= 0%
+Signal level		= 7
+------------------------------------------------
+Received		= 04 02 01 01 00
+Date/Time		= 2013-06-14 15:26:46
+Packet Length		= 04
+Packettype		= Receiver/Transmitter Message
+Subtype			= Transmitter response
+Seqnbr			= 01
+Message			= ACK, transmit OK
+Status [[[<write status='success'/>]]]
+ok
+7
+RFXCMD version 0.24
+------------------------------------------------
+Send			= 0B 11 00 01 00 95 D8 3E 02 01 0F 70
+Date/Time		= 2013-06-14 15:26:51
+Packet Length		= 0B
+Packettype		= Lighting2
+Subtype			= AC
+Seqnbr			= 01
+Id			= 0095D83E
+Unitcode		= 2
+Command			= On
+Dim level		= 100%
+Signal level		= 7
+------------------------------------------------
+Received		= 04 02 01 01 00
+Date/Time		= 2013-06-14 15:26:52
+Packet Length		= 04
+Packettype		= Receiver/Transmitter Message
+Subtype			= Transmitter response
+Seqnbr			= 01
+Message			= ACK, transmit OK
+Status [[[<write status='success'/>]]]
+ok
+7
+RFXCMD version 0.24
+------------------------------------------------
+Send			= 0B 11 00 01 00 95 D8 3E 02 00 00 70
+Date/Time		= 2013-06-14 15:27:08
+Packet Length		= 0B
+Packettype		= Lighting2
+Subtype			= AC
+Seqnbr			= 01
+Id			= 0095D83E
+Unitcode		= 2
+Command			= Off
+Dim level		= 0%
+Signal level		= 7
+------------------------------------------------
+Received		= 04 02 01 01 00
+Date/Time		= 2013-06-14 15:27:09
+Packet Length		= 04
+Packettype		= Receiver/Transmitter Message
+Subtype			= Transmitter response
+Seqnbr			= 01
+Message			= ACK, transmit OK
+Status [[[<write status='success'/>]]]
+ok
+7

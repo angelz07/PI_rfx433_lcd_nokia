@@ -1,0 +1,8 @@
+#!/bin/bash
+sleep 5m
+sh /etc/lcd_bouton_rf433/prise_radio.sh prise_1 off
+sleep 1
+sh /etc/lcd_bouton_rf433/prise_radio.sh prise_2 off
+sleep 1
+sh /etc/lcd_bouton_rf433/prise_radio.sh prise_3 off
+sleep 1
